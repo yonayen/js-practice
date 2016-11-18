@@ -27,3 +27,12 @@ if(age % 2 !== 0) {
 if(age % Math.sqrt(age) === 0) {
   console.log("Your age is a perfect square");
 }
+
+// While loops
+
+var count = 1;
+
+while (count < 10) {
+  console.log("count is: " + count);
+  count =+ 4;
+}
