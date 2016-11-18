@@ -12,3 +12,8 @@ alert("You're " + whatIsAge + " years old");
 if(age < 0) {
   console.log("Come back once you're out of the womb")
 }
+
+// if age is 21
+if(age === 21) {
+  console.log("Happy 21st Birthday")
+}
