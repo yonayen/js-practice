@@ -10,10 +10,15 @@ alert("You're " + whatIsAge + " years old");
 
 // age is negative or less than 0
 if(age < 0) {
-  console.log("Come back once you're out of the womb")
+  console.log("Come back once you're out of the womb");
 }
 
 // if age is 21
 if(age === 21) {
-  console.log("Happy 21st Birthday")
+  console.log("Happy 21st Birthday");
+}
+
+// if age is odd (not divisible by 2)
+if(age % 2 !== 0) {
+  console.log("Your age is odd!");
 }
