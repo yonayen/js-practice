@@ -57,6 +57,12 @@ while (num <= 19) {
   num++;
 }
 
+// --- USING FOR LOOP -- //
+
+for (i = -10; i <= 19; i++) {
+  console.log(i);
+}
+
 // all even numbers b/w 10 and 40
 
 var num = 10;
@@ -66,6 +72,14 @@ while (num <= 40) {
     console.log(num);
   }
   num++;
+}
+
+// -- USING FOR LOOP -- //
+
+for (i = 10; i <= 40; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
 }
 
 // all odd numbers between 300 and 333
@@ -79,6 +93,14 @@ while (num <= 333) {
   num++;
 }
 
+//-- USING FOR LOOP --//
+
+for (i = 300; i <= 333; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+
 // all numbers divisble by 5 and 3 between 5 and 50
 
 var num = 5;
@@ -88,4 +110,12 @@ while (num <= 50) {
     console.log(num);
   }
   num++;
+}
+
+// -- USING FOR LOOP --//
+
+for (i = 5; i <= 50; i++) {
+  if (i % 5 === 0 && i % 3 === 0) {
+    console.log(i);
+  }
 }
