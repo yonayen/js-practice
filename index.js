@@ -96,7 +96,7 @@ while (num <= 333) {
 //-- USING FOR LOOP --//
 
 for (i = 300; i <= 333; i++) {
-  if (i % 2 === 0) {
+  if (i % 2 !== 0) {
     console.log(i);
   }
 }
