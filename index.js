@@ -103,14 +103,14 @@ for (i = 300; i <= 333; i++) {
 
 // all numbers divisble by 5 and 3 between 5 and 50
 
-// var num = 5;
-//
-// while (num <= 50) {
-//   if (num % 5 === 0 && num % 3 === 0) {
-//     console.log(num);
-//   }
-//   num++;
-// }
+var num = 5;
+
+while (num <= 50) {
+  if (num % 5 === 0 && num % 3 === 0) {
+    console.log(num);
+  }
+  num++;
+}
 
 // -- USING FOR LOOP --//
 
@@ -119,3 +119,15 @@ for (i = 5; i <= 50; i++) {
     console.log(i);
   }
 }
+
+// -- RETURN KEYWORD -- //
+// create function that capitalizes first character in a string //
+
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice.(1);
+}
+
+var city = "paris"; // paris
+var capital = capitalize(city); // Paris
+
+ // Capture the returned value in a variable 'capital' 
