@@ -149,16 +149,30 @@ var capital = capitalize(city); // Paris
 
 function isEven(num) {
   if (num % 2 === 0) {
-    return "true: the number is even"
+    return "true: the number is even";
   }
-  else
-    return "false: that was not even"
+  else {
+    return "false: that was not even";
+  }
 }
 
 // factorial() -- write function that takes single number and returns its factorial
 
-function factorial(num) {
+function recursiveFactorial(num) {
+  if (num === 0){
+    return 1;
+  }
+  else {
+    return num * recursiveFactorial(num - 1);
+  }
+}
 
+function iterativeFactorial(num) {
+  var rval = 1;
+  for (var i = 2; i <= num; i++) {
+    rval *= i;
+  }
+  return rval;
 }
 
  // kebabToSnake() function -- takes string and replace every "-" with "_"
