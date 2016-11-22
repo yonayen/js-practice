@@ -144,3 +144,25 @@ var capital = capitalize(city); // Paris
 
  var num = 37;
  var capital = capitalize(num);  //"that's not a string"
+
+// isEven() -- write function that takes single numeric argument and returns true if even/ false if otherwise
+
+function isEven(num) {
+  if (num % 2 === 0) {
+    return "true: the number is even"
+  }
+  else
+    return "false: that was not even"
+}
+
+// factorial() -- write function that takes single number and returns its factorial
+
+function factorial(num) {
+
+}
+
+ // kebabToSnake() function -- takes string and replace every "-" with "_"
+
+ function kebabToSnake(string) {
+
+ }
