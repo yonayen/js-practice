@@ -239,3 +239,26 @@ function deleteTodo(){
   todos.splice(index, 1); // deletes the index number and only 1 item from there.
   console.log("deleted todo");
 }
+
+// _______________________________________________________________________
+
+// Array exercises
+
+// function printreverse() that takes array as argument and prints out elements in reverse order
+// without reversing array itself
+printreverse()
+
+
+// function isUniform() takes array as an argument and returns true if all elements in array are identical
+// ex: isUniform([1,1,1,1]); returns true and isUniform([4,5,2]); returns false
+isUniform()
+
+
+// write function sumArray() that accepts an array of numbers and returns sum of all numbers in array
+// sumArray([4,5,6]); returns 15
+sumArray()
+
+
+// function max() accepts an array of numbers and returns the max number in the array
+// example: max([3,4,1]);; returns 4
+max()
