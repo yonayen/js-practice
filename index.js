@@ -190,4 +190,10 @@ function iterativeFactorial(num) {
    if(color%3 === 0) {
      console.log(color);
    }
- });
+ });         // Answer ... is "3", "6", "9"
+
+ for (i = 0; i < numbers.length; i++) {
+   if(numbers[i] % 3 ===0) {
+     console.log(numbers[i]);
+   }
+ }
