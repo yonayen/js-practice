@@ -197,3 +197,25 @@ function iterativeFactorial(num) {
      console.log(numbers[i]);
    }
  }
+
+// Todo APP WITHOUT DOM MANIPULATION
+
+var todos = ["Buy new Turtle"];
+
+var input = prompt("what would you like to do?");
+
+while(input !== "quit") {
+  // handle input
+  if(input === "list") {
+    console.log(todos);
+  } else if(input === "new") {
+    // ask for new Todo
+    var newTodo = prompt("Enter new Todo");
+    // add to todos array
+      todos.push(newTodo);
+  }
+  // ask again for new input
+  input = prompt("what would you like to do?");
+}
+
+console.log("Ok, you quit the app");
