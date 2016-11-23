@@ -207,15 +207,35 @@ var input = prompt("what would you like to do?");
 while(input !== "quit") {
   // handle input
   if(input === "list") {
-    console.log(todos);
+    listTodos();
   } else if(input === "new") {
-    // ask for new Todo
-    var newTodo = prompt("Enter new Todo");
-    // add to todos array
-      todos.push(newTodo);
+    addTodo();
+  } else if(input === "delete"){
+    deleteTodo();
   }
   // ask again for new input
   input = prompt("what would you like to do?");
 }
-
 console.log("Ok, you quit the app");
+
+function listTodos(){
+  todos.forEach(function(todo, i){
+    console.log(i + ": " + todo);
+  });
+}
+
+function addTodo(){
+  // ask for new Todo
+  var newTodo = prompt("Enter new Todo");
+  // add to todos array
+  todos.push(newTodo);
+  console.log("added todo")
+}
+
+function deleteTodo(){
+  // ask for index of todo to be deleted
+  var index = prompt("enter index of prompt you want deleted");
+  // delete that todo
+  todos.splice(index, 1); // deletes the index number and only 1 item from there.
+  console.log("deleted todo");
+}
