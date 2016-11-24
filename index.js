@@ -298,3 +298,20 @@ function max(arr){
 }
 
 max([4,5,20,14]); // returns 20
+
+// ---------------------------------------- //
+// Objects Exercises //
+
+var someObject = {
+  friends: [
+    {name: "Malfoy"},
+    {name: "Crabbe"},
+    {name: "Goyle"}
+  ],
+  color: "baby blue",
+  isEvil: true
+};
+
+//  retrieve "Malfoy" from someObject
+
+someObject.friends[0].name
