@@ -315,3 +315,27 @@ var someObject = {
 //  retrieve "Malfoy" from someObject
 
 someObject.friends[0].name
+
+// movieDB Exercises
+  // Each movie shoudl have title, rating, hasWatched properties.
+  // Iterate through the array and print out something that looks like:
+  // ... You have watched "In Bruges" - 5 stars
+
+movie = [
+  {title: "In Bruges", rating: 5, hasWatched: true},
+  {title: "Frozen", rating: 4, hasWatched: false},
+  {title: "Mad Max", rating: 3, hasWatched: false},
+  {title: "Les Miserables", rating: 5, hasWatched: true}
+]
+
+movie.forEach(function(movie){
+  printOut = "";
+  if(hasWatched !== true){
+    printOut += "You have NOT seen " + "/"/"" + movie.title + "/"/"" + " - " +
+    movie.rating;
+  } else {
+    printOut += "You've seen " + "/"/"" + movie.title + "/"/"" + " - " +
+    movie.rating;
+  }
+  return printOut;
+});
