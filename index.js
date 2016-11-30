@@ -328,8 +328,9 @@ movie = [
   {title: "Les Miserables", rating: 5, hasWatched: true}
 ]
 
+// NOT REFACOTRED
 movie.forEach(function(movie){
-  var restult = "You have ";
+  var result = "You have ";
   if(movie.hasWatched){ // evaluates to 'true' or 'false'
     result += "watched ";
   } else {
@@ -338,4 +339,22 @@ movie.forEach(function(movie){
   result += "\"" + movie.title + "\" - ";
   result += movie.rating + " stars";
   return result;
+});
+
+// REFACOTRED  -- Separate string building from logic
+
+function buildString(movie){
+  var result = "You have ";
+  if(movie.hasWatched){ // evaluates to 'true' or 'false'
+    result += "watched ";
+  } else {
+    result += "not seen ";
+  }
+  result += "\"" + movie.title + "\" - ";
+  result += movie.rating + " stars";
+  return result;
+}
+
+movie.forEach(function(movie){
+  return buildString(movie);
 });
