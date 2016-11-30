@@ -329,13 +329,13 @@ movie = [
 ]
 
 movie.forEach(function(movie){
-  printOut = "";
-  if(hasWatched !== true){
-    printOut += "You have NOT seen " + "/"/"" + movie.title + "/"/"" + " - " +
-    movie.rating;
+  var restult = "You have ";
+  if(movie.hasWatched){ // evaluates to 'true' or 'false'
+    result += "watched ";
   } else {
-    printOut += "You've seen " + "/"/"" + movie.title + "/"/"" + " - " +
-    movie.rating;
+    result += "not seen ";
   }
-  return printOut;
+  result += "\"" + movie.title + "\" - ";
+  result += movie.rating + " stars";
+  return result;
 });
