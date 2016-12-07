@@ -358,3 +358,5 @@ function buildString(movie){
 movie.forEach(function(movie){
   return buildString(movie);
 });
+
+// JS selectors w/out jQuery
