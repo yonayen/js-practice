@@ -360,3 +360,13 @@ movie.forEach(function(movie){
 });
 
 // JS selectors w/out jQuery
+document.getElementById("animals");
+document.getElementsByClassName("dogs");
+document.getElementsByTagName("li");
+document.getElementsByTagName("body");
+document.getElementsByTagName("head");
+document.querySelector(".cats"); // must name using CSS selectors # and .
+document.querySelector("#animals"); // must name using CSS selectors # and .
+document.querySelectorAll("li");
+document.querySelectorAll(".bolded");
+document.querySelectorAll("h1");
